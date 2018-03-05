@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.escobar.j0e009t.stephaniephrases.MainActivity">
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <Button
+            android:id="@+id/soyYo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="playSound"
+            android:layout_gravity="fill"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="Soy yo" />
+
+        <Button
+            android:id="@+id/ayGuey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="playSound"
+            android:layout_gravity="fill"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="Ay Guey" />
+
+        <Button
+            android:id="@+id/heyBabe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="playSound"
+            android:layout_gravity="fill"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="Hey Babe" />
+
+        <Button
+            android:id="@+id/deficilSerYo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="playSound"
+            android:layout_gravity="fill"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="Deficil Ser Yo" />
+
+        <Button
+            android:id="@+id/fleek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="playSound"
+            android:layout_gravity="fill"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="Fleek" />
+
+        <Button
+            android:id="@+id/cutABitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="playSound"
+            android:layout_gravity="fill"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="Cut A Bitch" />
+
+
+    </GridLayout>
+</RelativeLayout>
