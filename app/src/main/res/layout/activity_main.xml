@@ -7,85 +7,104 @@
     tools:context="com.escobar.j0e009t.stephaniephrases.MainActivity">
 
 
+    <TextView
+        android:id="@+id/title"
+        style="?attr/textAppearancePopupMenuHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="12dp"
+        android:text="Famous Stephanie Phrases"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
     <GridLayout
+        android:id="@+id/gridLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="410dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true">
+        android:layout_below="@+id/title">
 
         <Button
             android:id="@+id/soyYo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="playSound"
-            android:layout_gravity="fill"
             android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
             android:layout_row="0"
             android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
+            android:onClick="playSound"
             android:text="Soy yo" />
 
         <Button
             android:id="@+id/ayGuey"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="playSound"
-            android:layout_gravity="fill"
             android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
             android:layout_row="0"
             android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
+            android:onClick="playSound"
             android:text="Ay Guey" />
 
         <Button
             android:id="@+id/heyBabe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="playSound"
-            android:layout_gravity="fill"
             android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
             android:layout_row="1"
             android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
+            android:onClick="playSound"
             android:text="Hey Babe" />
 
         <Button
             android:id="@+id/deficilSerYo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="playSound"
-            android:layout_gravity="fill"
             android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
             android:layout_row="1"
             android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
+            android:onClick="playSound"
             android:text="Deficil Ser Yo" />
 
         <Button
             android:id="@+id/fleek"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="playSound"
-            android:layout_gravity="fill"
             android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
             android:layout_row="2"
             android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
+            android:onClick="playSound"
             android:text="Fleek" />
 
         <Button
             android:id="@+id/cutABitch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="playSound"
-            android:layout_gravity="fill"
             android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
             android:layout_row="2"
             android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
+            android:onClick="playSound"
             android:text="Cut A Bitch" />
-
-
     </GridLayout>
+
+    <SeekBar
+        android:id="@+id/progressSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gridLayout"
+        android:alpha=".40"
+        android:background="@android:color/background_dark" />
 </RelativeLayout>

@@ -4,9 +4,15 @@ import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.SeekBar;
+
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
 
+
+    MediaPlayer soundFile = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -14,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void playSound(View view){
-        MediaPlayer soundFile = null;
         switch(view.getId()){
             case R.id.soyYo :
                 soundFile = MediaPlayer.create(this, R.raw.soy_yo);
@@ -35,8 +40,16 @@ public class MainActivity extends AppCompatActivity {
                 soundFile = MediaPlayer.create(this, R.raw.ay_guey);
                 break;
         }
-
-
         soundFile.start();
+
+        final SeekBar progressSeekBar = findViewById(R.id.progressSeekBar);
+        progressSeekBar.setMax(soundFile.getDuration());
+
+        new Timer().schedule(new TimerTask() {
+            @Override
+            public void run() {
+                progressSeekBar.setProgress(soundFile.getCurrentPosition());
+            }
+        }, 0, 100);
     }
 }
