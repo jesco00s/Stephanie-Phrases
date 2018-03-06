@@ -41,7 +41,10 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
         soundFile.start();
+        monitorSoundProgress();
+    }
 
+    private void monitorSoundProgress(){
         final SeekBar progressSeekBar = findViewById(R.id.progressSeekBar);
         progressSeekBar.setMax(soundFile.getDuration());
 
